@@ -21,6 +21,6 @@ jobs:
           registry-url: https://registry.npmjs.org/
           scope: '@devexperts'
       - run: yarn
-      - run: yarn npm publish
+      - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPMJS_DEVEXPERTS_BOT_PUBLISH_TOKEN}}
